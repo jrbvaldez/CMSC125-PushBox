@@ -1,0 +1,39 @@
+Push Box! Game for ICS-OS
+--------------------------------
+
+1. Extract from within ics-os source dir.
+   $cd contrib/pushbox
+   $make
+   $sudo make install
+
+2. Perform the steps to install ics-os.
+   $cd ../..
+   $sudo make install 
+
+3. Inside ics-os (to run game)
+	cd apps
+	pushbox.exe
+
+Enjoy!
+
+Mechanics:
+----------
+After running .exe file, user will be redirected to the game's main menu which has two options:
+(P) Play
+(E) Exit
+
+If user chooses 'E', the game will close.
+If the user chooses 'P', he/she will be asked to choose a level to play (0-9).Player should press the num_key of the level he/she wants to play.
+
+* Brown boxes are walls and are impassable. These boxes cannot be moved/pushed or be replaced by other boxes.
+* Black boxes are spaces where the player is allowed to move around in.
+* Blue areas are storage areas where the pink boxes should be moves/stored to. These areas cannot be moved but are passable.
+* Pink boxes are movable boxes that can be pushed to occupy the blue areas. Pink boxes can only be PUSHED and NOT PULLED.
+* The green box is the player and is movable as long as it is not blocked. Player can move/push by using the keys 'W,A,S,D' (up,down,left,right). 
+* Purple boxes are pink boxes that have been stored in the blue areas. These boxes can be moved/pushed as well, but when they leave their blue area they revert back to their pink state.
+
+GOAL: Move all pink boxes towards the blue storage locations. TURN ALL PINK BOXES PURPLE!
+
+
+Valdez, Jessica Ria B. 2013-51016
+jrbvaldez@gmail.com
